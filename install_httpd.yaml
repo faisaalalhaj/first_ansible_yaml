@@ -1,0 +1,12 @@
+---
+
+- name: install httpd on web & db server 
+  hosts: all
+  become: true  
+  tasks:
+
+     - name: install htppd 
+       dnf:
+         name: httpd
+         state: latest 
+

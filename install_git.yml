@@ -1,0 +1,14 @@
+---
+
+- name: intall git for all hosts 
+  hosts: all 
+  become: true 
+  tasks:
+     
+    - name: install git 
+      dnf:
+        name: git 
+        state: present 
+
+
+
