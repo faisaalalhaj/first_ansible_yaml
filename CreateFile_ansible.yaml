@@ -1,0 +1,15 @@
+---
+
+
+- hosts: all 
+  become: true 
+  name: create a new files for managed hosts
+  tasks:
+
+     - name: create first new file
+       file:
+          path: /opt/faisalalhaj
+          mode: 0644
+          owner: devops
+          state: touch 
+
